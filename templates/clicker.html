@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Clicker Game{% endblock %}
+
+{% block content %}
+<div class="clicker-container">
+    <h1>Clicker Game</h1>
+    <p>Click the button as many times as you can!</p>
+    <h2 id="clickCount">0</h2>
+    <button id="clickButton">Click Me!</button>
+</div>
+<script src="{{ url_for('static', filename='js/clicker.js') }}"></script>
+{% endblock %}

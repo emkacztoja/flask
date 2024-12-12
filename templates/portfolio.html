@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Portfolio.css') }}">
+
+<div class="Portfolio">
+    <div class="portfolio-content">
+        <h2>Portfolio</h2>
+        <div class="photo-grid">
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/A45s.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/A45s.jpg') }}')">
+                <div class="overlay">Mercedes A45S</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/AudiTT.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/AudiTT.jpg') }}')">
+                <div class="overlay">Audi TT</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/Huracan.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/Huracan.jpg') }}')">
+                <div class="overlay">Lamborghini Huracan</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/Huracan2.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/Huracan2.jpg') }}')">
+                <div class="overlay">Lamborghini Huracan 2</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/Mustang.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/Mustang.jpg') }}')">
+                <div class="overlay">Ford Mustang</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/Urus.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/Urus.jpg') }}')">
+                <div class="overlay">Lamborghini Urus</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw1.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw1.jpg') }}')">
+                <div class="overlay">BMW 1</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw2.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw2.jpg') }}')">
+                <div class="overlay">BMW 2</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw3.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw3.jpg') }}')">
+                <div class="overlay">BMW 3</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw4.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw4.jpg') }}')">
+                <div class="overlay">BMW 4</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw5.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw5.jpg') }}')">
+                <div class="overlay">BMW 5</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw6.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw6.jpg') }}')">
+                <div class="overlay">BMW 6</div>
+            </div>
+            <div class="photo" style="background-image: url('{{ url_for('static', filename='images/bmw7.jpg') }}');" onclick="openModal('{{ url_for('static', filename='images/bmw7.jpg') }}')">
+                <div class="overlay">BMW 7</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+<script src="{{ url_for('static', filename='js/portfolio.js') }}"></script>
+{% endblock %}

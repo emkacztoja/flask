@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Summary{% endblock %}
+
+{% block content %}
+<div class="summary-page">
+    <h1>Summary</h1>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Phone:</strong> {{ phone }}</p>
+    <p><strong>Message:</strong> {{ message }}</p>
+
+    <a href="{{ url_for('home') }}">Return to Home</a>
+</div>
+{% endblock %}

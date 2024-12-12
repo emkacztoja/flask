@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Checkout{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Checkout.css') }}">
+<div class="Checkout">
+    <div class="checkout-content">
+        <h2>Order Summary</h2>
+        <p><strong>Number of Photos:</strong> {{ photos }}</p>
+        <p><strong>Editing Level:</strong> {{ editing }}</p>
+        <p><strong>Delivery Time:</strong> {{ delivery }} Days</p>
+        <p><strong>Total Price:</strong> {{ price }} PLN</p>
+    </div>
+</div>
+{% endblock %}

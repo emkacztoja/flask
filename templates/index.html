@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Home.css') }}">
+<div class="Home">
+    <div class="content">
+        <h2>Witaj na mojej stronie!</h2>
+        <p>Współczuję ale baw się dobrze</p>
+        <a href="{{ url_for('portfolio') }}" class="portfolio-button">Zobacz Portfolio</a>
+        <a href="{{ url_for('about') }}" class="portfolio-button">O mnie</a>
+    </div>
+</div>
+{% endblock %}

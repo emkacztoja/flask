@@ -1,0 +1,19 @@
+.Checkout {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-content {
+    padding: 20px;
+  }
+  
+  .checkout-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
